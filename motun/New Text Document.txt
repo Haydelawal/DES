@@ -1,0 +1,13 @@
+chrome://newtab/
+http://localhost/phpmyadmin/sql.php?db=motun&table=decisions&pos=0
+http://localhost/motun/dashboard/index.php
+http://localhost/motun/dashboard/form-basic-inputs.html
+http://localhost/motun/dashboard/create.php
+http://localhost/motun/dashboard/blocked-users.html
+http://localhost/motun/dashboard/editaction.php?updateid=5
+http://localhost/motun/dashboard/report-users.html
+view-source:http://localhost/motun/dashboard/report-users.html
+http://localhost/motun/dashboard/form-mask.html
+http://localhost/motun/dashboard/users.html
+http://localhost/motun/dashboard/blocked-users.html
+http://localhost/motun/dashboard/report-users.html

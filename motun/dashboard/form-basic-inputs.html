@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+<title>Admin Dashboard</title>
+
+
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="assets/css/feathericon.min.css">
+
+<link rel="stylesheet" href="assets/plugins/morris/morris.css">
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="main-wrapper">
+
+<div class="header">
+
+<div class="header-left">
+<a href="index.html" class="logo">
+<img src="assets/img/logo.png" alt="Logo">
+</a>
+<a href="index.html" class="logo logo-small">
+<img src="assets/img/logo-small.png" alt="Logo" width="30" height="30">
+</a>
+</div>
+
+<a href="javascript:void(0);" id="toggle_btn">
+<i class="fe fe-text-align-left"></i>
+</a>
+<div class="top-nav-search">
+<form>
+<input type="text" class="form-control" placeholder="Search here">
+<button class="btn" type="submit"><i class="fa fa-search"></i></button>
+</form>
+</div>
+
+<a class="mobile_btn" id="mobile_btn">
+<i class="fa fa-bars"></i>
+</a>
+
+
+
+
+</div>
+
+
+<div class="sidebar" id="sidebar">
+<div class="sidebar-inner slimscroll">
+<div id="sidebar-menu" class="sidebar-menu">
+<ul>
+<li class="menu-title">
+</li>
+<li>
+<a href="index.html"><i class="fe fe-home"></i> <span>Dashboard</span></a>
+</li>
+<li class="submenu">
+<a href="#"><i class="fe fe-users"></i> <span> Users</span> <span class="menu-arrow"></span></a>
+<ul style="display: none;">
+<li><a href="users.html">Users</a></li>
+<li><a href="blocked-users.html">Blocked User</a></li>
+<li><a href="report-users.html">Report User</a></li>
+</ul>
+</li>
+<li class="submenu">
+<a href="#"><i class="fe fe-sync"></i> <span> History </span> <span class="menu-arrow"></span></a>
+<ul style="display: none;">
+<li><a href="call-history.html"> Call History </a></li>
+<li><a href="group-history.html"> Group History </a></li>
+</ul>
+</li>
+<li class="submenu">
+<a href="#"><i class="fe fe-gear"></i> <span> Settings </span> <span class="menu-arrow"></span></a>
+<ul style="display: none;">
+<li><a href="general.html">General</a></li>
+<li><a href="admob.html">Admob </a></li>
+<li><a href="sinch-settings.html">Sinch Settings </a></li>
+<li><a href="firebase-settings.html">Firebase Settings </a></li>
+</ul>
+</li>
+<li>
+<a href="blank-page.html"><i class="fe fe-file"></i> <span>Blank Page</span></a>
+</li>
+<li>
+<a href="vector-maps.html"><i class="fe fe-map"></i> <span>Vector Maps</span></a>
+</li>
+<li>
+<a href="components.html"><i class="fe fe-vector"></i> <span>Components</span></a>
+</li>
+<li class="submenu">
+<a href="#"><i class="fe fe-layout"></i> <span> Forms <span class="menu-arrow"></span></span></a>
+<ul style="display: none;">
+<li><a href="form-basic-inputs.html" class="active">Basic Inputs</a></li>
+<li><a href="form-input-groups.html">Input Groups</a></li>
+<li><a href="form-horizontal.html">Horizontal Form</a></li>
+<li><a href="form-vertical.html">Vertical Form </a></li>
+<li><a href="form-mask.html">Form Mask</a></li>
+<li><a href="form-validation.html">Form Validation </a></li>
+</ul>
+</li>
+<li class="submenu">
+<a href="#"><i class="fe fe-table"></i> <span> Tables <span class="menu-arrow"></span></span></a>
+<ul style="display: none;">
+<li><a href="tables-basic.html">Basic Tables </a></li>
+<li><a href="data-tables.html">Data Table </a></li>
+</ul>
+</li>
+<li class="submenu">
+<a href="javascript:void(0);"><i class="fe fe-code"></i> <span>Multi Level</span> <span class="menu-arrow"></span></a>
+<ul style="display: none;">
+<li class="submenu">
+<a href="javascript:void(0);"> <span>Level 1</span> <span class="menu-arrow"></span></a>
+<ul style="display: none;">
+<li><a href="javascript:void(0);"><span>Level 2</span></a></li>
+<li class="submenu">
+<a href="javascript:void(0);"> <span> Level 2</span> <span class="menu-arrow"></span></a>
+<ul style="display: none;">
+<li><a href="javascript:void(0);">Level 3</a></li>
+<li><a href="javascript:void(0);">Level 3</a></li>
+</ul>
+</li>
+<li><a href="javascript:void(0);"> <span>Level 2</span></a></li>
+</ul>
+</li>
+<li>
+<a href="javascript:void(0);"> <span>Level 1</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- sidebar ends here -->
+
+
+<div class="page-wrapper">
+<div class="content container-fluid">
+
+<div class="page-header">
+<div class="row">
+<div class="col-sm-12">
+<h3 class="page-title">Create Report</h3>
+<ul class="breadcrumb">
+<li class="breadcrumb-item"><a href="index.php">Admin</a></li>
+<li class="breadcrumb-item active">Create Report</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<!--form-->
+<div class="row">
+<div class="col-sm-12">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Insert Your Data</h4>
+</div>
+<div class="card-body">
+
+    <!-- form -->
+<form action="#">
+
+<div class="form-group row">
+<label class="col-form-label col-md-2">Title</label>
+<div class="col-md-10">
+<input type="text" class="form-control">
+</div>
+</div>
+
+<div class="form-group row">
+    <label class="col-form-label col-md-2">Minute</label>
+    <div class="col-md-10">
+    <textarea rows="5" cols="5" class="form-control" placeholder="Enter text here"></textarea>
+    </div>
+    </div>
+
+<div class="form-group row">
+    <label class="col-form-label col-md-2">Key Aspect</label>
+    <div class="col-md-10">
+    <input type="text" class="form-control">
+    </div>
+    </div>
+
+    
+
+
+<div class="form-group row">
+<label class="col-form-label col-md-2">Start Time</label>
+<div class="col-md-10">
+<input type="time" class="form-control" placeholder="Placeholder">
+</div>
+</div>
+
+<div class="form-group row">
+    <label class="col-form-label col-md-2">End Time</label>
+    <div class="col-md-10">
+    <input type="time" class="form-control" placeholder="Placeholder">
+    </div>
+    </div>
+
+    <div class="form-group row">
+        <label class="col-form-label col-md-2">Date</label>
+        <div class="col-md-10">
+        <input type="date" class="form-control" placeholder="Placeholder">
+        </div>
+        </div>
+
+
+<div class="form-group row">
+<label class="col-form-label col-md-2">Meeting Status</label>
+<div class="col-md-10">
+<select class="form-control form-select">
+<option>-- Select --</option>
+<option>Open</option>
+<option>Closed</option>
+
+</select>
+</div>
+</div>
+
+
+<div class="form-group row">
+    <label class="col-form-label col-md-2">Meeting Venue</label>
+    <div class="col-md-10">
+    <select class="form-control form-select">
+    <option>-- Select --</option>
+    <option>Science Complex</option>
+    <option>Benson Hall</option>
+    <option>ICT</option>
+    <option>Science Room</option>
+    </select>
+    </div>
+    </div>
+
+
+
+
+<div class="form-group row">
+<label class="col-form-label col-md-2">Members</label>
+<div class="col-md-10">
+<div class="checkbox">
+<label>
+<input type="checkbox" name="checkbox"> Prof. Toyin
+</label>
+</div>
+<div class="checkbox">
+<label>
+<input type="checkbox" name="checkbox"> Engr. Aiyeneko
+</label>
+</div>
+<div class="checkbox">
+<label>
+<input type="checkbox" name="checkbox"> Prof. Rahman
+</label>
+</div>
+<div class="checkbox">
+    <label>
+    <input type="checkbox" name="checkbox"> Dr. Raji
+    </label>
+    </div>
+    <div class="checkbox">
+        <label>
+        <input type="checkbox" name="checkbox"> Dr. Owate
+        </label>
+        </div>
+        <div class="checkbox">
+            <label>
+            <input type="checkbox" name="checkbox"> Dr. Oloyede
+            </label>
+            </div>
+</div>
+</div>
+
+
+
+<div class="form-group mb-0 row">
+
+<button class="btn btn-primary" type="button">Save Report</button>
+
+</div>
+
+</form>
+
+<!-- form -->
+</div>
+</div>
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+<script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
